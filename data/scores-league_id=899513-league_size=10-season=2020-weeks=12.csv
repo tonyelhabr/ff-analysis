@@ -1,0 +1,121 @@
+team_id,opponent_id,team,week,team_home_id,team_away_id,points_home,points_away,team_home,team_away,team_winner_id,pf,pa,is_winner
+1,4,The Early GGod,1,4,1,130.5,101.82,I'm Also Sad,The Early GGod,4,101.82,130.5,FALSE
+1,5,The Early GGod,2,5,1,163.14,119.82,The Juggernaut,The Early GGod,5,119.82,163.14,FALSE
+1,3,The Early GGod,3,3,1,118.86,125.68,PAKI STANS,The Early GGod,1,125.68,118.86,TRUE
+1,8,The Early GGod,4,8,1,95.2,93.96,Big Coomers,The Early GGod,8,93.96,95.2,FALSE
+1,7,The Early GGod,5,7,1,126.56,146.1,Tony El Tigre,The Early GGod,1,146.1,126.56,TRUE
+1,2,The Early GGod,6,2,1,146.16,106.44,Coom Dumpster,The Early GGod,2,106.44,146.16,FALSE
+1,6,The Early GGod,7,6,1,100.84,162.68,OBJ's Personal Porta Potty,The Early GGod,1,162.68,100.84,TRUE
+1,10,The Early GGod,8,10,1,152.38,66.98,Austin 🐐Drew Lock🐐,The Early GGod,10,66.98,152.38,FALSE
+1,9,The Early GGod,9,9,1,138.42,87.06,RAFI CUNADO,The Early GGod,9,87.06,138.42,FALSE
+1,5,The Early GGod,10,5,1,162.28,96.56,The Juggernaut,The Early GGod,5,96.56,162.28,FALSE
+1,3,The Early GGod,11,3,1,144.78,123,PAKI STANS,The Early GGod,3,123,144.78,FALSE
+1,4,The Early GGod,12,1,4,82.56,107.86,The Early GGod,I'm Also Sad,4,82.56,107.86,FALSE
+2,3,Coom Dumpster,1,2,3,155.7,134.78,Coom Dumpster,PAKI STANS,2,155.7,134.78,TRUE
+2,9,Coom Dumpster,2,2,9,140.44,133.3,Coom Dumpster,RAFI CUNADO,2,140.44,133.3,TRUE
+2,4,Coom Dumpster,3,2,4,122.94,154.2,Coom Dumpster,I'm Also Sad,4,122.94,154.2,FALSE
+2,6,Coom Dumpster,4,2,6,117.04,151.98,Coom Dumpster,OBJ's Personal Porta Potty,6,117.04,151.98,FALSE
+2,10,Coom Dumpster,5,10,2,121.84,115.02,Austin 🐐Drew Lock🐐,Coom Dumpster,10,115.02,121.84,FALSE
+2,1,Coom Dumpster,6,2,1,146.16,106.44,Coom Dumpster,The Early GGod,2,146.16,106.44,TRUE
+2,5,Coom Dumpster,7,2,5,179.14,105.92,Coom Dumpster,The Juggernaut,2,179.14,105.92,TRUE
+2,7,Coom Dumpster,8,7,2,130.12,88.86,Tony El Tigre,Coom Dumpster,7,88.86,130.12,FALSE
+2,8,Coom Dumpster,9,8,2,173.16,62.84,Big Coomers,Coom Dumpster,8,62.84,173.16,FALSE
+2,9,Coom Dumpster,10,2,9,143.04,140.9,Coom Dumpster,RAFI CUNADO,2,143.04,140.9,TRUE
+2,4,Coom Dumpster,11,2,4,132.12,118.14,Coom Dumpster,I'm Also Sad,2,132.12,118.14,TRUE
+2,3,Coom Dumpster,12,3,2,137.08,157.46,PAKI STANS,Coom Dumpster,2,157.46,137.08,TRUE
+3,2,PAKI STANS,1,2,3,155.7,134.78,Coom Dumpster,PAKI STANS,2,134.78,155.7,FALSE
+3,10,PAKI STANS,2,3,10,104.16,110.38,PAKI STANS,Austin 🐐Drew Lock🐐,10,104.16,110.38,FALSE
+3,1,PAKI STANS,3,3,1,118.86,125.68,PAKI STANS,The Early GGod,1,118.86,125.68,FALSE
+3,9,PAKI STANS,4,3,9,143.58,162.84,PAKI STANS,RAFI CUNADO,9,143.58,162.84,FALSE
+3,6,PAKI STANS,5,3,6,121.08,168.64,PAKI STANS,OBJ's Personal Porta Potty,6,121.08,168.64,FALSE
+3,5,PAKI STANS,6,3,5,112.88,138.78,PAKI STANS,The Juggernaut,5,112.88,138.78,FALSE
+3,7,PAKI STANS,7,7,3,120.24,126.6,Tony El Tigre,PAKI STANS,3,126.6,120.24,TRUE
+3,8,PAKI STANS,8,3,8,101.58,122.56,PAKI STANS,Big Coomers,8,101.58,122.56,FALSE
+3,4,PAKI STANS,9,3,4,152.38,117.04,PAKI STANS,I'm Also Sad,3,152.38,117.04,TRUE
+3,10,PAKI STANS,10,3,10,86.5,71.1,PAKI STANS,Austin 🐐Drew Lock🐐,3,86.5,71.1,TRUE
+3,1,PAKI STANS,11,3,1,144.78,123,PAKI STANS,The Early GGod,3,144.78,123,TRUE
+3,2,PAKI STANS,12,3,2,137.08,157.46,PAKI STANS,Coom Dumpster,2,137.08,157.46,FALSE
+4,1,I'm Also Sad,1,4,1,130.5,101.82,I'm Also Sad,The Early GGod,4,130.5,101.82,TRUE
+4,7,I'm Also Sad,2,7,4,168.78,169.42,Tony El Tigre,I'm Also Sad,4,169.42,168.78,TRUE
+4,2,I'm Also Sad,3,2,4,122.94,154.2,Coom Dumpster,I'm Also Sad,4,154.2,122.94,TRUE
+4,5,I'm Also Sad,4,5,4,147.2,89.72,The Juggernaut,I'm Also Sad,5,89.72,147.2,FALSE
+4,8,I'm Also Sad,5,4,8,100.18,147.5,I'm Also Sad,Big Coomers,8,100.18,147.5,FALSE
+4,6,I'm Also Sad,6,4,6,117.96,109.62,I'm Also Sad,OBJ's Personal Porta Potty,4,117.96,109.62,TRUE
+4,10,I'm Also Sad,7,4,10,111.32,104.24,I'm Also Sad,Austin 🐐Drew Lock🐐,4,111.32,104.24,TRUE
+4,9,I'm Also Sad,8,4,9,118.68,122.24,I'm Also Sad,RAFI CUNADO,9,118.68,122.24,FALSE
+4,3,I'm Also Sad,9,3,4,152.38,117.04,PAKI STANS,I'm Also Sad,3,117.04,152.38,FALSE
+4,7,I'm Also Sad,10,7,4,103.94,112.6,Tony El Tigre,I'm Also Sad,4,112.6,103.94,TRUE
+4,2,I'm Also Sad,11,2,4,132.12,118.14,Coom Dumpster,I'm Also Sad,2,118.14,132.12,FALSE
+4,1,I'm Also Sad,12,1,4,82.56,107.86,The Early GGod,I'm Also Sad,4,107.86,82.56,TRUE
+5,7,The Juggernaut,1,7,5,131.48,133.16,Tony El Tigre,The Juggernaut,5,133.16,131.48,TRUE
+5,1,The Juggernaut,2,5,1,163.14,119.82,The Juggernaut,The Early GGod,5,163.14,119.82,TRUE
+5,8,The Juggernaut,3,8,5,91.38,137.36,Big Coomers,The Juggernaut,5,137.36,91.38,TRUE
+5,4,The Juggernaut,4,5,4,147.2,89.72,The Juggernaut,I'm Also Sad,5,147.2,89.72,TRUE
+5,9,The Juggernaut,5,9,5,106.98,135.52,RAFI CUNADO,The Juggernaut,5,135.52,106.98,TRUE
+5,3,The Juggernaut,6,3,5,112.88,138.78,PAKI STANS,The Juggernaut,5,138.78,112.88,TRUE
+5,2,The Juggernaut,7,2,5,179.14,105.92,Coom Dumpster,The Juggernaut,2,105.92,179.14,FALSE
+5,6,The Juggernaut,8,6,5,156.54,88.1,OBJ's Personal Porta Potty,The Juggernaut,6,88.1,156.54,FALSE
+5,10,The Juggernaut,9,10,5,93.02,144.76,Austin 🐐Drew Lock🐐,The Juggernaut,5,144.76,93.02,TRUE
+5,1,The Juggernaut,10,5,1,162.28,96.56,The Juggernaut,The Early GGod,5,162.28,96.56,TRUE
+5,8,The Juggernaut,11,8,5,128.38,143.5,Big Coomers,The Juggernaut,5,143.5,128.38,TRUE
+5,7,The Juggernaut,12,5,7,120.02,165.68,The Juggernaut,Tony El Tigre,7,120.02,165.68,FALSE
+6,9,OBJ's Personal Porta Potty,1,9,6,124.24,119.08,RAFI CUNADO,OBJ's Personal Porta Potty,9,119.08,124.24,FALSE
+6,8,OBJ's Personal Porta Potty,2,8,6,94.06,132.44,Big Coomers,OBJ's Personal Porta Potty,6,132.44,94.06,TRUE
+6,10,OBJ's Personal Porta Potty,3,6,10,152.04,146.74,OBJ's Personal Porta Potty,Austin 🐐Drew Lock🐐,6,152.04,146.74,TRUE
+6,2,OBJ's Personal Porta Potty,4,2,6,117.04,151.98,Coom Dumpster,OBJ's Personal Porta Potty,6,151.98,117.04,TRUE
+6,3,OBJ's Personal Porta Potty,5,3,6,121.08,168.64,PAKI STANS,OBJ's Personal Porta Potty,6,168.64,121.08,TRUE
+6,4,OBJ's Personal Porta Potty,6,4,6,117.96,109.62,I'm Also Sad,OBJ's Personal Porta Potty,4,109.62,117.96,FALSE
+6,1,OBJ's Personal Porta Potty,7,6,1,100.84,162.68,OBJ's Personal Porta Potty,The Early GGod,1,100.84,162.68,FALSE
+6,5,OBJ's Personal Porta Potty,8,6,5,156.54,88.1,OBJ's Personal Porta Potty,The Juggernaut,6,156.54,88.1,TRUE
+6,7,OBJ's Personal Porta Potty,9,7,6,138.02,164.42,Tony El Tigre,OBJ's Personal Porta Potty,6,164.42,138.02,TRUE
+6,8,OBJ's Personal Porta Potty,10,6,8,109.96,105.18,OBJ's Personal Porta Potty,Big Coomers,6,109.96,105.18,TRUE
+6,10,OBJ's Personal Porta Potty,11,10,6,100.1,138.9,Austin 🐐Drew Lock🐐,OBJ's Personal Porta Potty,6,138.9,100.1,TRUE
+6,9,OBJ's Personal Porta Potty,12,6,9,104.2,105.12,OBJ's Personal Porta Potty,RAFI CUNADO,9,104.2,105.12,FALSE
+7,5,Tony El Tigre,1,7,5,131.48,133.16,Tony El Tigre,The Juggernaut,5,131.48,133.16,FALSE
+7,4,Tony El Tigre,2,7,4,168.78,169.42,Tony El Tigre,I'm Also Sad,4,168.78,169.42,FALSE
+7,9,Tony El Tigre,3,9,7,180.06,155.42,RAFI CUNADO,Tony El Tigre,9,155.42,180.06,FALSE
+7,10,Tony El Tigre,4,10,7,129.32,151.04,Austin 🐐Drew Lock🐐,Tony El Tigre,7,151.04,129.32,TRUE
+7,1,Tony El Tigre,5,7,1,126.56,146.1,Tony El Tigre,The Early GGod,1,126.56,146.1,FALSE
+7,8,Tony El Tigre,6,7,8,148.26,106.18,Tony El Tigre,Big Coomers,7,148.26,106.18,TRUE
+7,3,Tony El Tigre,7,7,3,120.24,126.6,Tony El Tigre,PAKI STANS,3,120.24,126.6,FALSE
+7,2,Tony El Tigre,8,7,2,130.12,88.86,Tony El Tigre,Coom Dumpster,7,130.12,88.86,TRUE
+7,6,Tony El Tigre,9,7,6,138.02,164.42,Tony El Tigre,OBJ's Personal Porta Potty,6,138.02,164.42,FALSE
+7,4,Tony El Tigre,10,7,4,103.94,112.6,Tony El Tigre,I'm Also Sad,4,103.94,112.6,FALSE
+7,9,Tony El Tigre,11,9,7,115.6,137.24,RAFI CUNADO,Tony El Tigre,7,137.24,115.6,TRUE
+7,5,Tony El Tigre,12,5,7,120.02,165.68,The Juggernaut,Tony El Tigre,7,165.68,120.02,TRUE
+8,10,Big Coomers,1,10,8,122.2,119.78,Austin 🐐Drew Lock🐐,Big Coomers,10,119.78,122.2,FALSE
+8,6,Big Coomers,2,8,6,94.06,132.44,Big Coomers,OBJ's Personal Porta Potty,6,94.06,132.44,FALSE
+8,5,Big Coomers,3,8,5,91.38,137.36,Big Coomers,The Juggernaut,5,91.38,137.36,FALSE
+8,1,Big Coomers,4,8,1,95.2,93.96,Big Coomers,The Early GGod,8,95.2,93.96,TRUE
+8,4,Big Coomers,5,4,8,100.18,147.5,I'm Also Sad,Big Coomers,8,147.5,100.18,TRUE
+8,7,Big Coomers,6,7,8,148.26,106.18,Tony El Tigre,Big Coomers,7,106.18,148.26,FALSE
+8,9,Big Coomers,7,9,8,135.66,149.76,RAFI CUNADO,Big Coomers,8,149.76,135.66,TRUE
+8,3,Big Coomers,8,3,8,101.58,122.56,PAKI STANS,Big Coomers,8,122.56,101.58,TRUE
+8,2,Big Coomers,9,8,2,173.16,62.84,Big Coomers,Coom Dumpster,8,173.16,62.84,TRUE
+8,6,Big Coomers,10,6,8,109.96,105.18,OBJ's Personal Porta Potty,Big Coomers,6,105.18,109.96,FALSE
+8,5,Big Coomers,11,8,5,128.38,143.5,Big Coomers,The Juggernaut,5,128.38,143.5,FALSE
+8,10,Big Coomers,12,8,10,147.1,97.26,Big Coomers,Austin 🐐Drew Lock🐐,8,147.1,97.26,TRUE
+9,6,RAFI CUNADO,1,9,6,124.24,119.08,RAFI CUNADO,OBJ's Personal Porta Potty,9,124.24,119.08,TRUE
+9,2,RAFI CUNADO,2,2,9,140.44,133.3,Coom Dumpster,RAFI CUNADO,2,133.3,140.44,FALSE
+9,7,RAFI CUNADO,3,9,7,180.06,155.42,RAFI CUNADO,Tony El Tigre,9,180.06,155.42,TRUE
+9,3,RAFI CUNADO,4,3,9,143.58,162.84,PAKI STANS,RAFI CUNADO,9,162.84,143.58,TRUE
+9,5,RAFI CUNADO,5,9,5,106.98,135.52,RAFI CUNADO,The Juggernaut,5,106.98,135.52,FALSE
+9,10,RAFI CUNADO,6,9,10,96.46,87.38,RAFI CUNADO,Austin 🐐Drew Lock🐐,9,96.46,87.38,TRUE
+9,8,RAFI CUNADO,7,9,8,135.66,149.76,RAFI CUNADO,Big Coomers,8,135.66,149.76,FALSE
+9,4,RAFI CUNADO,8,4,9,118.68,122.24,I'm Also Sad,RAFI CUNADO,9,122.24,118.68,TRUE
+9,1,RAFI CUNADO,9,9,1,138.42,87.06,RAFI CUNADO,The Early GGod,9,138.42,87.06,TRUE
+9,2,RAFI CUNADO,10,2,9,143.04,140.9,Coom Dumpster,RAFI CUNADO,2,140.9,143.04,FALSE
+9,7,RAFI CUNADO,11,9,7,115.6,137.24,RAFI CUNADO,Tony El Tigre,7,115.6,137.24,FALSE
+9,6,RAFI CUNADO,12,6,9,104.2,105.12,OBJ's Personal Porta Potty,RAFI CUNADO,9,105.12,104.2,TRUE
+10,8,Austin 🐐Drew Lock🐐,1,10,8,122.2,119.78,Austin 🐐Drew Lock🐐,Big Coomers,10,122.2,119.78,TRUE
+10,3,Austin 🐐Drew Lock🐐,2,3,10,104.16,110.38,PAKI STANS,Austin 🐐Drew Lock🐐,10,110.38,104.16,TRUE
+10,6,Austin 🐐Drew Lock🐐,3,6,10,152.04,146.74,OBJ's Personal Porta Potty,Austin 🐐Drew Lock🐐,6,146.74,152.04,FALSE
+10,7,Austin 🐐Drew Lock🐐,4,10,7,129.32,151.04,Austin 🐐Drew Lock🐐,Tony El Tigre,7,129.32,151.04,FALSE
+10,2,Austin 🐐Drew Lock🐐,5,10,2,121.84,115.02,Austin 🐐Drew Lock🐐,Coom Dumpster,10,121.84,115.02,TRUE
+10,9,Austin 🐐Drew Lock🐐,6,9,10,96.46,87.38,RAFI CUNADO,Austin 🐐Drew Lock🐐,9,87.38,96.46,FALSE
+10,4,Austin 🐐Drew Lock🐐,7,4,10,111.32,104.24,I'm Also Sad,Austin 🐐Drew Lock🐐,4,104.24,111.32,FALSE
+10,1,Austin 🐐Drew Lock🐐,8,10,1,152.38,66.98,Austin 🐐Drew Lock🐐,The Early GGod,10,152.38,66.98,TRUE
+10,5,Austin 🐐Drew Lock🐐,9,10,5,93.02,144.76,Austin 🐐Drew Lock🐐,The Juggernaut,5,93.02,144.76,FALSE
+10,3,Austin 🐐Drew Lock🐐,10,3,10,86.5,71.1,PAKI STANS,Austin 🐐Drew Lock🐐,3,71.1,86.5,FALSE
+10,6,Austin 🐐Drew Lock🐐,11,10,6,100.1,138.9,Austin 🐐Drew Lock🐐,OBJ's Personal Porta Potty,6,100.1,138.9,FALSE
+10,8,Austin 🐐Drew Lock🐐,12,8,10,147.1,97.26,Big Coomers,Austin 🐐Drew Lock🐐,8,97.26,147.1,FALSE
