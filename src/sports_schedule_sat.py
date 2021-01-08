@@ -37,31 +37,43 @@ from functools import reduce
 
 from ortools.sat.python import cp_model
 
+# solution_printer = VarArraySolutionPrinter(
+#     fixtures, partial(get_scheduled_fixtures, pools=pools),
+#     check_file_collision("list_" + csv)
+# )
+
 
 class VarArraySolutionPrinter(cp_model.CpSolverSolutionCallback):
     """Print intermediate solutions."""
-    def __init__(self, fixtures, getter, csvfile):
+    def __init__(self, fixtures, getter, csvfile, limit=100000):
         cp_model.CpSolverSolutionCallback.__init__(self)
         self.__fixtures = fixtures
         self.__getter = getter
         self.__solution_count = 0
         self.__writer = self.get_csv_writer(csvfile)
         self.__close_once = True
+        self.__solution_limit = limit
 
         fixture_regex = r"day (\d+), home (\d+), away (\d+)"
+        # fixture_regex = self.__solution_count
         self.__prog = re.compile(fixture_regex)
 
     def on_solution_callback(self):
         self.__solution_count += 1
-        if self.__solution_count < 101:
-            matches = self.__getter(solver=self, fixtures=self.__fixtures)
-            for row in matches:
-                line = ", ".join(['%s=%i' % (k, v) for (k, v) in row.items()])
-                print(line)
-                self.__writer.writerow(row)
+        # if self.__solution_count < 101:
+        matches = self.__getter(solver=self, fixtures=self.__fixtures)
+        for row in matches:
+            # line = ", ".join(['%s=%i' % (k, v) for (k, v) in row.items()])
+            # print(line)
+            # print(f'solution: {self.__solution__count}')
+            self.__writer.writerow(row)
 
-            print()
-            self.__writer.writerow({})
+        # print()
+        self.__writer.writerow({})
+
+        # if self.__solution_count >= self.__solution_limit:
+        #     print('Stop search after %i solutions' % self.__solution_limit)
+        #     self.StopSearch()
 
         # elif self.__close_once:
         #     self.close_csv()

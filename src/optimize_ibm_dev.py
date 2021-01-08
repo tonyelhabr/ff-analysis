@@ -30,7 +30,7 @@ for i in range(n_h2h_gm):
                     1, n_wk, name='tm1_{}_tm2_{}_gm_{}'.format(t1, t2, i)
                 )
 # %%
-# If team t plays team t2 in week w, then team t2 must play team t1 in week w.
+# If team t1 plays team t2 in week w, then team t2 must play team t1 in week w.
 for t1 in idx_tms:
     for t2 in idx_tms:
         if t2 != t1:
