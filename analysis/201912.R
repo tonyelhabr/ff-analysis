@@ -1,0 +1,155 @@
+
+
+library(tidyverse)
+# library(ffsched)
+
+league_id <- 899513
+weeks <- 12
+league_size <- 10
+season <- 2019
+sims <- 10000
+tries <- 0.1 * sims
+export <- TRUE
+
+options(
+  readr.num_columns = 0,
+  ffsched.dir_data = 'data'
+)
+
+.path_local <- function(x) {
+  file.path('data', sprintf('%s-season=%s-league_id=%s.json', x, season, league_id))
+}
+
+path_teams <- .path_local('teams')
+path_scores <- .path_local('scores')
+
+scores <-
+  ffsched::scrape_espn_ff_scores(
+    league_id = league_id,
+    league_size = league_size,
+    season = season,
+    weeks = weeks,
+    local = TRUE,
+    path_teams = path_teams,
+    path_scores = path_scores
+  )
+scores
+
+# debugonce(ffsched::do_simulate_standings)
+standings_sims <-
+  ffsched::do_simulate_standings(
+    league_id = league_id,
+    league_size = league_size,
+    season = season,
+    weeks = weeks,
+    sims = sims,
+    tries = tries
+  )
+standings_sims
+
+standings_sims_n <-
+  standings_sims %>% 
+  count(team_id, team, rank, sort = TRUE) %>% 
+  group_by(team_id, team) %>% 
+  mutate(frac = n / sum(n)) %>% 
+  ungroup()
+standings_sims_n
+
+standings_sims_n_top <-
+  standings_sims_n %>% 
+  group_by(rank) %>% 
+  slice_max(n, with_ties = FALSE) %>%  
+  ungroup()
+standings_sims_n_top
+
+standings_sims_n_top <-
+  standings_sims_n %>% 
+  group_by(team) %>% 
+  summarize(
+    tot = sum(n),
+    rank_avg = sum(rank * n)  / tot
+  ) %>% 
+  ungroup() %>% 
+  mutate(rank_tot = row_number(rank_avg)) %>% 
+  arrange(rank_tot)
+standings_sims_n_top
+
+standings_actual <-
+  scores %>% 
+  mutate(w = if_else(pf > pa, 1, 0)) %>% 
+  group_by(team, team_id) %>% 
+  summarize(
+    across(c(w, pf), sum)
+  ) %>% 
+  ungroup() %>% 
+  mutate(rank_w = min_rank(-w)) %>% 
+  group_by(rank_w) %>% 
+  mutate(
+    rank_tiebreak = row_number(-pf) - 1L
+  ) %>% 
+  ungroup() %>% 
+  mutate(rank = rank_w + rank_tiebreak)
+standings_actual
+
+.factor_cols <- function(data) {
+  data %>% 
+    left_join(
+      standings_sims_n_top %>% 
+        select(team, rank_tot, rank_avg)
+    ) %>% 
+    left_join(standings_actual) %>% 
+    # left_join(teams) %>% 
+    mutate(
+      across(team, ~fct_reorder(.x, -rank_tot)),
+      across(rank, ordered)
+    )
+}
+
+
+ffsched::theme_set_update_ffsched()
+
+.pts <- function(x) {
+  as.numeric(grid::convertUnit(grid::unit(x, 'pt'), 'mm'))
+}
+
+viz_standings_tile <-
+  standings_sims_n %>% 
+  .factor_cols() %>% 
+  ggplot() +
+  aes(x = rank, y = team) +
+  geom_tile(aes(fill = frac), alpha = 0.5, na.rm = FALSE) +
+  geom_tile(
+    data = standings_actual %>% .factor_cols(),
+    fill = NA,
+    color = 'black',
+    size = 3
+  ) +
+  geom_text(
+    aes(label = scales::percent(frac, accuracy = 1.1)), 
+    color = 'black', 
+    size = .pts(14),
+    fontface = 'bold'
+  ) +
+  scale_fill_viridis_c(option = 'B', begin = 0.2, end = 1) +
+  guides(fill = FALSE) +
+  theme(
+    panel.grid.major = element_blank(),
+    plot.caption = ggtext::element_markdown()
+  ) +
+  labs(
+    title = 'Simulated final regular season standings positions',
+    subtitle = 'Based on 10k unique schedules',
+    caption = '**Viz**: @Tony ElHabr | **Data**: 2019 fantasy football league',
+    x = NULL,
+    y = NULL
+  )
+viz_standings_tile
+
+ggsave(
+  plot = viz_standings_tile, 
+  filename = file.path('figs', 'viz_standings_tile_2019.png'), 
+  type = 'cairo', 
+  width = 12,
+  height = 8
+)
+

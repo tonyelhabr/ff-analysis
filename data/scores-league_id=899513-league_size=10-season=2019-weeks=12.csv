@@ -1,0 +1,121 @@
+team_id,opponent_id,team,week,team_home_id,team_away_id,points_home,points_away,team_home,team_away,team_winner_id,pf,pa,is_winner
+1,2,I AM GROOT,1,1,2,109.54,98,I AM GROOT,Unsolicited Dak Pics,1,109.54,98,TRUE
+1,4,I AM GROOT,2,4,1,85.6,97.42,Siempre Papi,I AM GROOT,1,97.42,85.6,TRUE
+1,8,I AM GROOT,3,1,8,83.22,99.48,I AM GROOT,Rushin Collusion,8,83.22,99.48,FALSE
+1,6,I AM GROOT,4,1,6,112.48,113.6,I AM GROOT,Patronizing Pandas,6,112.48,113.6,FALSE
+1,7,I AM GROOT,5,7,1,139.26,117.94,Michael Dickson Your Face,I AM GROOT,7,117.94,139.26,FALSE
+1,5,I AM GROOT,6,1,5,80.12,91.24,I AM GROOT,Lamar = Lord of Taco Light,5,80.12,91.24,FALSE
+1,10,I AM GROOT,7,10,1,70.74,96.52,Austin Winnies,I AM GROOT,1,96.52,70.74,TRUE
+1,3,I AM GROOT,8,3,1,116.76,154.78,Trill Grads,I AM GROOT,1,154.78,116.76,TRUE
+1,9,I AM GROOT,9,1,9,97.36,56.04,I AM GROOT,Fail Mary,1,97.36,56.04,TRUE
+1,2,I AM GROOT,10,2,1,121.28,81.22,Unsolicited Dak Pics,I AM GROOT,2,81.22,121.28,FALSE
+1,4,I AM GROOT,11,1,4,108.52,70.14,I AM GROOT,Siempre Papi,1,108.52,70.14,TRUE
+1,8,I AM GROOT,12,8,1,93.74,73.26,Rushin Collusion,I AM GROOT,8,73.26,93.74,FALSE
+2,1,Unsolicited Dak Pics,1,1,2,109.54,98,I AM GROOT,Unsolicited Dak Pics,1,98,109.54,FALSE
+2,9,Unsolicited Dak Pics,2,2,9,106.66,72.16,Unsolicited Dak Pics,Fail Mary,2,106.66,72.16,TRUE
+2,3,Unsolicited Dak Pics,3,2,3,90.04,169.84,Unsolicited Dak Pics,Trill Grads,3,90.04,169.84,FALSE
+2,4,Unsolicited Dak Pics,4,4,2,86.28,126.62,Siempre Papi,Unsolicited Dak Pics,2,126.62,86.28,TRUE
+2,8,Unsolicited Dak Pics,5,2,8,129.52,74.56,Unsolicited Dak Pics,Rushin Collusion,2,129.52,74.56,TRUE
+2,6,Unsolicited Dak Pics,6,6,2,115.82,118.62,Patronizing Pandas,Unsolicited Dak Pics,2,118.62,115.82,TRUE
+2,7,Unsolicited Dak Pics,7,2,7,57.56,119.78,Unsolicited Dak Pics,Michael Dickson Your Face,7,57.56,119.78,FALSE
+2,5,Unsolicited Dak Pics,8,2,5,82.36,136.94,Unsolicited Dak Pics,Lamar = Lord of Taco Light,5,82.36,136.94,FALSE
+2,10,Unsolicited Dak Pics,9,10,2,155.32,123.48,Austin Winnies,Unsolicited Dak Pics,10,123.48,155.32,FALSE
+2,1,Unsolicited Dak Pics,10,2,1,121.28,81.22,Unsolicited Dak Pics,I AM GROOT,2,121.28,81.22,TRUE
+2,9,Unsolicited Dak Pics,11,9,2,110.48,111.38,Fail Mary,Unsolicited Dak Pics,2,111.38,110.48,TRUE
+2,3,Unsolicited Dak Pics,12,3,2,131.62,134.48,Trill Grads,Unsolicited Dak Pics,2,134.48,131.62,TRUE
+3,9,Trill Grads,1,9,3,112.82,161.12,Fail Mary,Trill Grads,3,161.12,112.82,TRUE
+3,7,Trill Grads,2,3,7,79.86,142.64,Trill Grads,Michael Dickson Your Face,7,79.86,142.64,FALSE
+3,2,Trill Grads,3,2,3,90.04,169.84,Unsolicited Dak Pics,Trill Grads,3,169.84,90.04,TRUE
+3,5,Trill Grads,4,3,5,117.9,116.18,Trill Grads,Lamar = Lord of Taco Light,3,117.9,116.18,TRUE
+3,4,Trill Grads,5,4,3,104.4,180.24,Siempre Papi,Trill Grads,3,180.24,104.4,TRUE
+3,10,Trill Grads,6,3,10,95.2,111.6,Trill Grads,Austin Winnies,10,95.2,111.6,FALSE
+3,8,Trill Grads,7,8,3,86.84,65.22,Rushin Collusion,Trill Grads,8,65.22,86.84,FALSE
+3,1,Trill Grads,8,3,1,116.76,154.78,Trill Grads,I AM GROOT,1,116.76,154.78,FALSE
+3,6,Trill Grads,9,6,3,112.14,110.04,Patronizing Pandas,Trill Grads,6,110.04,112.14,FALSE
+3,9,Trill Grads,10,3,9,111.54,98.62,Trill Grads,Fail Mary,3,111.54,98.62,TRUE
+3,7,Trill Grads,11,7,3,126.14,111.26,Michael Dickson Your Face,Trill Grads,7,111.26,126.14,FALSE
+3,2,Trill Grads,12,3,2,131.62,134.48,Trill Grads,Unsolicited Dak Pics,2,131.62,134.48,FALSE
+4,10,Siempre Papi,1,10,4,99.2,124.86,Austin Winnies,Siempre Papi,4,124.86,99.2,TRUE
+4,1,Siempre Papi,2,4,1,85.6,97.42,Siempre Papi,I AM GROOT,1,85.6,97.42,FALSE
+4,9,Siempre Papi,3,9,4,125.2,105.36,Fail Mary,Siempre Papi,9,105.36,125.2,FALSE
+4,2,Siempre Papi,4,4,2,86.28,126.62,Siempre Papi,Unsolicited Dak Pics,2,86.28,126.62,FALSE
+4,3,Siempre Papi,5,4,3,104.4,180.24,Siempre Papi,Trill Grads,3,104.4,180.24,FALSE
+4,8,Siempre Papi,6,8,4,72.8,113.24,Rushin Collusion,Siempre Papi,4,113.24,72.8,TRUE
+4,6,Siempre Papi,7,4,6,109.86,114.14,Siempre Papi,Patronizing Pandas,6,109.86,114.14,FALSE
+4,7,Siempre Papi,8,7,4,115.56,106.4,Michael Dickson Your Face,Siempre Papi,7,106.4,115.56,FALSE
+4,5,Siempre Papi,9,4,5,94.28,109,Siempre Papi,Lamar = Lord of Taco Light,5,94.28,109,FALSE
+4,10,Siempre Papi,10,4,10,100.68,111.68,Siempre Papi,Austin Winnies,10,100.68,111.68,FALSE
+4,1,Siempre Papi,11,1,4,108.52,70.14,I AM GROOT,Siempre Papi,1,70.14,108.52,FALSE
+4,9,Siempre Papi,12,4,9,124.84,94.06,Siempre Papi,Fail Mary,4,124.84,94.06,TRUE
+5,8,Lamar = Lord of Taco Light,1,8,5,93.78,132.76,Rushin Collusion,Lamar = Lord of Taco Light,5,132.76,93.78,TRUE
+5,6,Lamar = Lord of Taco Light,2,5,6,140.78,153.32,Lamar = Lord of Taco Light,Patronizing Pandas,6,140.78,153.32,FALSE
+5,7,Lamar = Lord of Taco Light,3,7,5,94.42,122.88,Michael Dickson Your Face,Lamar = Lord of Taco Light,5,122.88,94.42,TRUE
+5,3,Lamar = Lord of Taco Light,4,3,5,117.9,116.18,Trill Grads,Lamar = Lord of Taco Light,3,116.18,117.9,FALSE
+5,10,Lamar = Lord of Taco Light,5,5,10,122.24,129.72,Lamar = Lord of Taco Light,Austin Winnies,10,122.24,129.72,FALSE
+5,1,Lamar = Lord of Taco Light,6,1,5,80.12,91.24,I AM GROOT,Lamar = Lord of Taco Light,5,91.24,80.12,TRUE
+5,9,Lamar = Lord of Taco Light,7,5,9,117.72,125.86,Lamar = Lord of Taco Light,Fail Mary,9,117.72,125.86,FALSE
+5,2,Lamar = Lord of Taco Light,8,2,5,82.36,136.94,Unsolicited Dak Pics,Lamar = Lord of Taco Light,5,136.94,82.36,TRUE
+5,4,Lamar = Lord of Taco Light,9,4,5,94.28,109,Siempre Papi,Lamar = Lord of Taco Light,5,109,94.28,TRUE
+5,8,Lamar = Lord of Taco Light,10,5,8,120.02,149.88,Lamar = Lord of Taco Light,Rushin Collusion,8,120.02,149.88,FALSE
+5,6,Lamar = Lord of Taco Light,11,6,5,119.68,111.48,Patronizing Pandas,Lamar = Lord of Taco Light,6,111.48,119.68,FALSE
+5,7,Lamar = Lord of Taco Light,12,5,7,83.16,109.74,Lamar = Lord of Taco Light,Michael Dickson Your Face,7,83.16,109.74,FALSE
+6,7,Patronizing Pandas,1,6,7,101.22,116.82,Patronizing Pandas,Michael Dickson Your Face,7,101.22,116.82,FALSE
+6,5,Patronizing Pandas,2,5,6,140.78,153.32,Lamar = Lord of Taco Light,Patronizing Pandas,6,153.32,140.78,TRUE
+6,10,Patronizing Pandas,3,6,10,102.66,152.54,Patronizing Pandas,Austin Winnies,10,102.66,152.54,FALSE
+6,1,Patronizing Pandas,4,1,6,112.48,113.6,I AM GROOT,Patronizing Pandas,6,113.6,112.48,TRUE
+6,9,Patronizing Pandas,5,9,6,98.84,106.94,Fail Mary,Patronizing Pandas,6,106.94,98.84,TRUE
+6,2,Patronizing Pandas,6,6,2,115.82,118.62,Patronizing Pandas,Unsolicited Dak Pics,2,115.82,118.62,FALSE
+6,4,Patronizing Pandas,7,4,6,109.86,114.14,Siempre Papi,Patronizing Pandas,6,114.14,109.86,TRUE
+6,8,Patronizing Pandas,8,6,8,120.9,112.52,Patronizing Pandas,Rushin Collusion,6,120.9,112.52,TRUE
+6,3,Patronizing Pandas,9,6,3,112.14,110.04,Patronizing Pandas,Trill Grads,6,112.14,110.04,TRUE
+6,7,Patronizing Pandas,10,7,6,76.22,123.34,Michael Dickson Your Face,Patronizing Pandas,6,123.34,76.22,TRUE
+6,5,Patronizing Pandas,11,6,5,119.68,111.48,Patronizing Pandas,Lamar = Lord of Taco Light,6,119.68,111.48,TRUE
+6,10,Patronizing Pandas,12,10,6,67.1,66.58,Austin Winnies,Patronizing Pandas,10,66.58,67.1,FALSE
+7,6,Michael Dickson Your Face,1,6,7,101.22,116.82,Patronizing Pandas,Michael Dickson Your Face,7,116.82,101.22,TRUE
+7,3,Michael Dickson Your Face,2,3,7,79.86,142.64,Trill Grads,Michael Dickson Your Face,7,142.64,79.86,TRUE
+7,5,Michael Dickson Your Face,3,7,5,94.42,122.88,Michael Dickson Your Face,Lamar = Lord of Taco Light,5,94.42,122.88,FALSE
+7,10,Michael Dickson Your Face,4,10,7,78,122.9,Austin Winnies,Michael Dickson Your Face,7,122.9,78,TRUE
+7,1,Michael Dickson Your Face,5,7,1,139.26,117.94,Michael Dickson Your Face,I AM GROOT,7,139.26,117.94,TRUE
+7,9,Michael Dickson Your Face,6,9,7,110.22,172.74,Fail Mary,Michael Dickson Your Face,7,172.74,110.22,TRUE
+7,2,Michael Dickson Your Face,7,2,7,57.56,119.78,Unsolicited Dak Pics,Michael Dickson Your Face,7,119.78,57.56,TRUE
+7,4,Michael Dickson Your Face,8,7,4,115.56,106.4,Michael Dickson Your Face,Siempre Papi,7,115.56,106.4,TRUE
+7,8,Michael Dickson Your Face,9,8,7,123.38,120.9,Rushin Collusion,Michael Dickson Your Face,8,120.9,123.38,FALSE
+7,6,Michael Dickson Your Face,10,7,6,76.22,123.34,Michael Dickson Your Face,Patronizing Pandas,6,76.22,123.34,FALSE
+7,3,Michael Dickson Your Face,11,7,3,126.14,111.26,Michael Dickson Your Face,Trill Grads,7,126.14,111.26,TRUE
+7,5,Michael Dickson Your Face,12,5,7,83.16,109.74,Lamar = Lord of Taco Light,Michael Dickson Your Face,7,109.74,83.16,TRUE
+8,5,Rushin Collusion,1,8,5,93.78,132.76,Rushin Collusion,Lamar = Lord of Taco Light,5,93.78,132.76,FALSE
+8,10,Rushin Collusion,2,10,8,107.3,83.62,Austin Winnies,Rushin Collusion,10,83.62,107.3,FALSE
+8,1,Rushin Collusion,3,1,8,83.22,99.48,I AM GROOT,Rushin Collusion,8,99.48,83.22,TRUE
+8,9,Rushin Collusion,4,8,9,65.22,86.48,Rushin Collusion,Fail Mary,9,65.22,86.48,FALSE
+8,2,Rushin Collusion,5,2,8,129.52,74.56,Unsolicited Dak Pics,Rushin Collusion,2,74.56,129.52,FALSE
+8,4,Rushin Collusion,6,8,4,72.8,113.24,Rushin Collusion,Siempre Papi,4,72.8,113.24,FALSE
+8,3,Rushin Collusion,7,8,3,86.84,65.22,Rushin Collusion,Trill Grads,8,86.84,65.22,TRUE
+8,6,Rushin Collusion,8,6,8,120.9,112.52,Patronizing Pandas,Rushin Collusion,6,112.52,120.9,FALSE
+8,7,Rushin Collusion,9,8,7,123.38,120.9,Rushin Collusion,Michael Dickson Your Face,8,123.38,120.9,TRUE
+8,5,Rushin Collusion,10,5,8,120.02,149.88,Lamar = Lord of Taco Light,Rushin Collusion,8,149.88,120.02,TRUE
+8,10,Rushin Collusion,11,8,10,82.02,82.86,Rushin Collusion,Austin Winnies,10,82.02,82.86,FALSE
+8,1,Rushin Collusion,12,8,1,93.74,73.26,Rushin Collusion,I AM GROOT,8,93.74,73.26,TRUE
+9,3,Fail Mary,1,9,3,112.82,161.12,Fail Mary,Trill Grads,3,112.82,161.12,FALSE
+9,2,Fail Mary,2,2,9,106.66,72.16,Unsolicited Dak Pics,Fail Mary,2,72.16,106.66,FALSE
+9,4,Fail Mary,3,9,4,125.2,105.36,Fail Mary,Siempre Papi,9,125.2,105.36,TRUE
+9,8,Fail Mary,4,8,9,65.22,86.48,Rushin Collusion,Fail Mary,9,86.48,65.22,TRUE
+9,6,Fail Mary,5,9,6,98.84,106.94,Fail Mary,Patronizing Pandas,6,98.84,106.94,FALSE
+9,7,Fail Mary,6,9,7,110.22,172.74,Fail Mary,Michael Dickson Your Face,7,110.22,172.74,FALSE
+9,5,Fail Mary,7,5,9,117.72,125.86,Lamar = Lord of Taco Light,Fail Mary,9,125.86,117.72,TRUE
+9,10,Fail Mary,8,9,10,118.7,112.18,Fail Mary,Austin Winnies,9,118.7,112.18,TRUE
+9,1,Fail Mary,9,1,9,97.36,56.04,I AM GROOT,Fail Mary,1,56.04,97.36,FALSE
+9,3,Fail Mary,10,3,9,111.54,98.62,Trill Grads,Fail Mary,3,98.62,111.54,FALSE
+9,2,Fail Mary,11,9,2,110.48,111.38,Fail Mary,Unsolicited Dak Pics,2,110.48,111.38,FALSE
+9,4,Fail Mary,12,4,9,124.84,94.06,Siempre Papi,Fail Mary,4,94.06,124.84,FALSE
+10,4,Austin Winnies,1,10,4,99.2,124.86,Austin Winnies,Siempre Papi,4,99.2,124.86,FALSE
+10,8,Austin Winnies,2,10,8,107.3,83.62,Austin Winnies,Rushin Collusion,10,107.3,83.62,TRUE
+10,6,Austin Winnies,3,6,10,102.66,152.54,Patronizing Pandas,Austin Winnies,10,152.54,102.66,TRUE
+10,7,Austin Winnies,4,10,7,78,122.9,Austin Winnies,Michael Dickson Your Face,7,78,122.9,FALSE
+10,5,Austin Winnies,5,5,10,122.24,129.72,Lamar = Lord of Taco Light,Austin Winnies,10,129.72,122.24,TRUE
+10,3,Austin Winnies,6,3,10,95.2,111.6,Trill Grads,Austin Winnies,10,111.6,95.2,TRUE
+10,1,Austin Winnies,7,10,1,70.74,96.52,Austin Winnies,I AM GROOT,1,70.74,96.52,FALSE
+10,9,Austin Winnies,8,9,10,118.7,112.18,Fail Mary,Austin Winnies,9,112.18,118.7,FALSE
+10,2,Austin Winnies,9,10,2,155.32,123.48,Austin Winnies,Unsolicited Dak Pics,10,155.32,123.48,TRUE
+10,4,Austin Winnies,10,4,10,100.68,111.68,Siempre Papi,Austin Winnies,10,111.68,100.68,TRUE
+10,8,Austin Winnies,11,8,10,82.02,82.86,Rushin Collusion,Austin Winnies,10,82.86,82.02,TRUE
+10,6,Austin Winnies,12,10,6,67.1,66.58,Austin Winnies,Patronizing Pandas,10,67.1,66.58,TRUE
