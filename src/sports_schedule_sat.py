@@ -60,20 +60,15 @@ class VarArraySolutionPrinter(cp_model.CpSolverSolutionCallback):
 
     def on_solution_callback(self):
         self.__solution_count += 1
-        # if self.__solution_count < 101:
-        matches = self.__getter(solver=self, fixtures=self.__fixtures)
-        for row in matches:
-            # line = ", ".join(['%s=%i' % (k, v) for (k, v) in row.items()])
-            # print(line)
-            # print(f'solution: {self.__solution__count}')
-            self.__writer.writerow(row)
+        if self.__solution_count < 101:
+            matches = self.__getter(solver=self, fixtures=self.__fixtures)
+            for row in matches:
+                line = ", ".join(['%s=%i' % (k, v) for (k, v) in row.items()])
+                print(line)
+                self.__writer.writerow(row)
 
-        # print()
-        self.__writer.writerow({})
-
-        # if self.__solution_count >= self.__solution_limit:
-        #     print('Stop search after %i solutions' % self.__solution_limit)
-        #     self.StopSearch()
+            print()
+            self.__writer.writerow({})
 
         # elif self.__close_once:
         #     self.close_csv()
@@ -793,7 +788,7 @@ def main():
         '-t,--teams',
         type=int,
         dest='num_teams',
-        required=True,
+        default=4,
         help='Number of teams in the league'
     )
 
@@ -801,7 +796,7 @@ def main():
         '-d,--days',
         type=int,
         dest='num_matchdays',
-        required=True,
+        default=3,
         help=
         'Number of days on which matches are played.  Default is enough days such that every team can play every other team, or (number of teams - 1)'
     )
@@ -835,7 +830,7 @@ def main():
         '--timelimit',
         type=int,
         dest='time_limit',
-        default=60,
+        default=4,
         help='Maximum run time for solver, in seconds.  Default is 60 seconds.'
     )
 
@@ -843,6 +838,7 @@ def main():
         '--cpu',
         type=int,
         dest='cpu',
+        default=4,
         help=
         'Number of workers (CPUs) to use for solver.  Default is 6 or number of CPUs available, whichever is lower'
     )
@@ -855,13 +851,14 @@ def main():
         '--max_home_stand',
         type=int,
         dest='max_home_stand',
-        default=2,
+        default=3,
         help=
         "Maximum consecutive home or away games.  Default to 2, which means three home or away games in a row is forbidden."
     )
 
     parser.add_argument(
         '--enumerate',
+        default=True,
         action='store_true',
         dest='listall',
         help=

@@ -2,6 +2,7 @@ import argparse
 import os
 import csv
 import re
+from functools import partial
 from ortools.sat.python import cp_model
 
 
@@ -51,26 +52,30 @@ class SolutionPrinter(cp_model.CpSolverSolutionCallback):
 
     def get_csv_writer(self, path):
         self._path_csv = open(path, 'w', newline='')
-        fieldnames = ['tm1', 'tm2', 'wk']
-        writer = csv.DictWriter(self._path_csv, fieldnames=fieldnames)
+        fields = ['tm1', 'tm2', 'wk']
+        writer = csv.DictWriter(self._path_csv, fieldnames=fields)
         writer.writeheader()
         return writer
 
 
 def get_assigned_games(solver, games):
-    # can't figure how to increment the game number inside the day
-    # here, but I guess it is probably wrong anyway
-    assigned_games = list()
-    # for t1, t2 in games:
-
-    # assigned_games = [
-    #     {
-    #         'tm1': t1 + 1,
-    #         'tm2': t2 + 1,
-    #         'wk':  x
-    #     } for (t1, t2) in games
-    # ]
-    return list(assigned_games)
+    # assigned_games = list()
+    # for t1, t2 in games.keys():
+    #     assigned_games.append(
+    #         {
+    #             'tm1': t1,
+    #             'tm2': t2,
+    #             'wk': solver.Value(games[(t1, t2)])
+    #         }
+    #     )
+    assigned_games = [
+        {
+            'tm1': t1,
+            'tm2': t2,
+            'wk': solver.Value(games[(t1, t2)])
+        } for t1, t2 in games.keys()
+    ]
+    return assigned_games
 
 
 def check_file_collision(name):
@@ -83,12 +88,12 @@ def check_file_collision(name):
     return name
 
 
-def csv_dump_results(games, csv_name):
+def csv_dump_results(games, name):
 
-    checkname = check_file_collision(csv_name)
-    with open(checkname, 'w', newline='') as csvfile:
-        fieldnames = ['tm1', 'tm2', 'wk']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    kname = check_file_collision(name)
+    with open(name, 'w', newline='') as file:
+        fields = ['tm1', 'tm2', 'wk']
+        writer = csv.DictWriter(file, fieldnames=fields)
 
         writer.writeheader()
         for row in games:
@@ -134,7 +139,8 @@ def solution_search_model(
         n_w=n_w,
         n_show=n_show,
         verbose=verbose,
-        getter=check_file_collision(name)
+        getter=partial(get_assigned_games, games=games),
+        path_csv=check_file_collision(name)
     )
     status = solver.SearchForAllSolutions(model, printer)
 
@@ -159,7 +165,7 @@ def report_results(solver, status, games, time, name=None):
 
     print('Optimal objective value: %i' % solver.ObjectiveValue())
 
-    assigned_games = get_assigned_games(solver, games)
+    assigned_games = get_assigned_games(solver=solver, games=games)
     if status != cp_model.OPTIMAL and solver.WallTime() >= time:
         print(f'Solver reached maximum time allowed {time}.')
         print(
@@ -198,7 +204,10 @@ def main():
         help='Maximum run time for solver, in seconds. Default is 3 seconds.'
     )
     parser.add_argument(
-        '--verbose', action='store_true', help='Turn on some print statements.'
+        '--verbose',
+        default=True,
+        action='store_true',
+        help='Turn on some print statements.'
     )
     args = parser.parse_args()
     n_t = args.n_t
