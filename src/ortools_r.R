@@ -59,29 +59,28 @@ solver
 # opt_err
 # options(error = recover)
 # options(error = NULL)
-CpSolverSolutionCallback <- cp_model$CpSolverSolutionCallback
-SolutionPrinter <-
-  reticulate::PyClass(
-    'SolutionPrinter',
-    inherit = CpSolverSolutionCallback,
-    defs = list(
-      `__init__` = function(self, games, n_team) {
-        print('initializing')
-        # browser()
-        cp_model$CpSolverSolutionCallback$`__init__`(self)
-        self$games <- games
-        self$n_team <- n_team
-        self$n_sol <- 0
-        # browser()
-        NULL
-      },
-      on_solution_callback = function(self) {
-        printer('in callback')
-        self$n_sol <- self$n_sol + 1
-      }
-    )
-  )
-# reticulate::source_python('src/ortools_function2.py')
+# SolutionPrinter <-
+#   reticulate::PyClass(
+#     'SolutionPrinter',
+#     inherit = cp_model$CpSolverSolutionCallback,
+#     defs = list(
+#       `__init__` = function(self, games, n_team) {
+#         print('initializing')
+#         # browser()
+#         cp_model$CpSolverSolutionCallback$`__init__`(self)
+#         self$games <- games
+#         self$n_team <- n_team
+#         self$n_sol <- 0
+#         # browser()
+#         NULL
+#       },
+#       on_solution_callback = function(self) {
+#         printer('in callback')
+#         self$n_sol <- self$n_sol + 1
+#       }
+#     )
+#   )
+reticulate::source_python('src/ortools_function.py')
 # printer <- SolutionPrinter
 printer <- SolutionPrinter(games = games, n_team = n_team)
 # printer <- cp_model$CpSolverSolutionCallback
