@@ -1,3 +1,5 @@
+# Reference: https://github.com/jmarca/sports_scheduling
+
 # based on sports_schedulting_sat.cc, Copyright 2010-2018 Google LLC
 #
 # translated to Python by James E. Marca August 2019, with the

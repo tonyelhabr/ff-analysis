@@ -134,7 +134,7 @@ viz_standings_tile <-
     size = .pts(14),
     fontface = 'bold'
   ) +
-  scale_fill_viridis_c(option = 'B', begin = 0.2, end = 1) +
+  scale_fill_viridis_c(option = 'C', begin = 0.2, end = 1) +
   guides(fill = FALSE) +
   theme(
     panel.grid.major = element_blank(),
@@ -151,7 +151,7 @@ viz_standings_tile
 
 ggsave(
   plot = viz_standings_tile, 
-  filename = file.path('figs', 'viz_standings_tile.png'), 
+  filename = file.path('figs', 'viz_standings_tile_2020.png'), 
   type = 'cairo', 
   width = 12,
   height = 8

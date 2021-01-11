@@ -61,7 +61,7 @@ standings_sims_n_top <-
   slice_max(n, with_ties = FALSE) %>%  
   ungroup()
 standings_sims_n_top
-
+ffsched::scrape_espn_ff_scores
 standings_sims_n_top <-
   standings_sims_n %>% 
   group_by(team) %>% 
@@ -91,6 +91,23 @@ standings_actual <-
   mutate(rank = rank_w + rank_tiebreak)
 standings_actual
 
+teams <-
+  tibble(
+    team_lab = c(
+      'Aggie Boomer',
+      'Never Safe For Work',
+      'Never Googled a Thing In My Life',
+      'Just Here So That I Don\'t Get Fined',
+      'Former Degenerate Gambler',
+      '[Autodraft]',
+      'n00b',
+      'Tacommissioner',
+      'The Juggernaut',
+      'Tony El Tigre'
+    ),
+    team_id = c(10, 8, 2, 4, 6, 3, 9, 1, 5, 7)
+  )
+
 .factor_cols <- function(data) {
   data %>% 
     left_join(
@@ -98,9 +115,9 @@ standings_actual
         select(team, rank_tot, rank_avg)
     ) %>% 
     left_join(standings_actual) %>% 
-    # left_join(teams) %>% 
+    left_join(teams) %>% 
     mutate(
-      across(team, ~fct_reorder(.x, -rank_tot)),
+      across(team_lab, ~fct_reorder(.x, -rank_tot)),
       across(rank, ordered)
     )
 }
@@ -116,7 +133,7 @@ viz_standings_tile <-
   standings_sims_n %>% 
   .factor_cols() %>% 
   ggplot() +
-  aes(x = rank, y = team) +
+  aes(x = rank, y = team_lab) +
   geom_tile(aes(fill = frac), alpha = 0.5, na.rm = FALSE) +
   geom_tile(
     data = standings_actual %>% .factor_cols(),
@@ -130,7 +147,7 @@ viz_standings_tile <-
     size = .pts(14),
     fontface = 'bold'
   ) +
-  scale_fill_viridis_c(option = 'B', begin = 0.2, end = 1) +
+  scale_fill_viridis_c(option = 'E', begin = 0.2, end = 1) +
   guides(fill = FALSE) +
   theme(
     panel.grid.major = element_blank(),
@@ -138,7 +155,7 @@ viz_standings_tile <-
   ) +
   labs(
     title = 'Simulated final regular season standings positions',
-    subtitle = 'Based on 10k unique schedules',
+    subtitle = 'Based on 100k unique schedules',
     caption = '**Viz**: @Tony ElHabr | **Data**: 2019 fantasy football league',
     x = NULL,
     y = NULL
